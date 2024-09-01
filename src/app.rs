@@ -20,7 +20,7 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         std::io::stdin().read_line(&mut input)?;
 
         match input.trim().parse::<u32>()? {
-            1 => dump_packet(),
+            1 => dump_packet()?,
             2 => {}
             3 => {}
             0 => {
